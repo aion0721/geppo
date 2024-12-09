@@ -30,7 +30,7 @@ class EMLProcessorApp:
         if not self.eml_directory:
             eg.popup_error("ディレクトリが選択されていません。")
             return
-        output_file = "output.csv"
+        output_file = "./output/output.csv"
         process_eml_files(self.eml_directory, output_file)
         eg.popup(f"処理が完了しました。\n出力ファイル: {output_file}")
 
