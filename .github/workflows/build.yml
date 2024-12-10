@@ -3,6 +3,8 @@ name: Build and Upload EXE
 on:
   push:
     branches: [main]
+    tags:
+      - "v*"
 
 jobs:
   build:
